@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Chat UI',
       theme: ThemeData(
         primaryColor: Colors.red,
+        accentColor: Color(0xFFFEF9EB),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
