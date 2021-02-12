@@ -1,4 +1,5 @@
 import 'package:chat_ui/widgets/category-selector.dart';
+import 'package:chat_ui/widgets/chats.dart';
 import 'package:chat_ui/widgets/favourite_contacts.dart';
 import 'package:flutter/material.dart';
 
@@ -54,6 +55,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   FavouriteContacts(),
+                  RecentChats(),
                 ],
               ),
             ),
