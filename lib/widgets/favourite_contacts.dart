@@ -53,7 +53,7 @@ class FavouriteContacts extends StatelessWidget {
                       ),
                       Text(
                         favorites[index].name,
-                        style: TextStyle(color: Colors.blueGrey),
+                        style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.w500),
                       ),
                     ],
                   ),

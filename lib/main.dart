@@ -1,5 +1,6 @@
 import 'package:chat_ui/screens/home-page.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,6 +12,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Chat UI',
       theme: ThemeData(
+        textTheme: GoogleFonts.poppinsTextTheme(
+          Theme.of(context).textTheme,
+        ),
         primaryColor: Colors.red,
         accentColor: Color(0xFFFEF9EB),
         visualDensity: VisualDensity.adaptivePlatformDensity,
