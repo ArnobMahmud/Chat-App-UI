@@ -14,18 +14,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.purple[200],
       appBar: AppBar(
         elevation: 0.0,
         title: Text(
-          "Chat UI",
-          style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
+          "Message App UI",
+          style: TextStyle(fontSize: 26.0, color: Colors.black38),
         ),
         leading: IconButton(
           icon: Icon(
             Icons.menu,
             size: 30.0,
-            color: Colors.white,
+            color: Colors.amber[100],
           ),
           onPressed: () {},
         ),
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(
               Icons.search,
               size: 30.0,
-              color: Colors.white,
+              color: Colors.amber[100],
             ),
             onPressed: () {},
           ),
@@ -46,7 +46,6 @@ class _HomePageState extends State<HomePage> {
           CategorySelector(),
           Expanded(
             child: Container(
-              height: 500.0,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30.0),

@@ -6,7 +6,6 @@ class RecentChats extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 300.0,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
@@ -77,19 +76,23 @@ class RecentChats extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                         Container(
-                          height: 20.0,
-                          width: 40.0,
+                          height: MediaQuery.of(context).size.height * 0.03,
+                          width: MediaQuery.of(context).size.width * 0.1,
                           decoration: BoxDecoration(
-                              color: chat.unread ? Colors.red : Colors.white,
+                              color: chat.unread
+                                  ? Colors.purple[200]
+                                  : Colors.white,
                               borderRadius: BorderRadius.circular(20.0)),
-                          child: Text(
-                            'NEW',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.0,
-                                fontWeight: FontWeight.bold),
+                          child: Center(
+                            child: Text(
+                              'NEW',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          alignment: Alignment.center,
+                          // alignment: Alignment.center,
                         ),
                       ],
                     )

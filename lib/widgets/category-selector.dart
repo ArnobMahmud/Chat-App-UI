@@ -8,14 +8,17 @@ class CategorySelector extends StatefulWidget {
 }
 
 class _CategorySelectorState extends State<CategorySelector> {
-  final List<String> categories = ["Messages", "Online", "Groups", "Requests"];
+  final List<String> categories = ["Messages", "Stories", "Groups", "Requests"];
   int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Container(
-        height: 80.0,
-        color: Colors.red,
+        height: height * .12,
+        width: width * 1,
+        color: Colors.purple[200],
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: categories.length,

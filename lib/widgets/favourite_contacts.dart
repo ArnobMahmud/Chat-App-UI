@@ -31,7 +31,7 @@ class FavouriteContacts extends StatelessWidget {
             ),
           ),
           Container(
-            height: 120.0,
+            height: MediaQuery.of(context).size.height * .18,
             child: ListView.builder(
               padding: EdgeInsets.only(left: 10.0),
               scrollDirection: Axis.horizontal,
@@ -45,7 +45,8 @@ class FavouriteContacts extends StatelessWidget {
                         padding: const EdgeInsets.all(10.0),
                         child: CircleAvatar(
                           radius: 30.0,
-                          backgroundImage: AssetImage(favorites[index].imageUrl),
+                          backgroundImage:
+                             AssetImage(favorites[index].imageUrl),
                         ),
                       ),
                       SizedBox(
@@ -53,7 +54,8 @@ class FavouriteContacts extends StatelessWidget {
                       ),
                       Text(
                         favorites[index].name,
-                        style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.w500),
+                        style: TextStyle(color: Colors.blueGrey, 
+                        fontWeight: FontWeight.w500),
                       ),
                     ],
                   ),
